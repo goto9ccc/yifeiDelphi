@@ -4,10 +4,11 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, _BaseForm;
+  Dialogs, _BaseForm, ExtCtrls;
 
 type
   TFormLaunch = class(T_FormBase)
+    img: TImage;
   private
     { Private declarations }
   public
