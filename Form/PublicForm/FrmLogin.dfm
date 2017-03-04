@@ -1,19 +1,23 @@
 inherited FormLogin: TFormLogin
-  Top = 123
-  Height = 407
+  Left = 398
+  Top = 208
+  BorderStyle = bsNone
   Caption = 'FormLogin'
+  ClientHeight = 251
+  ClientWidth = 374
+  Color = 15904855
   OldCreateOrder = True
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 12
   object lbl1: TLabel
-    Left = 120
-    Top = 120
+    Left = 48
+    Top = 40
     Width = 71
     Height = 19
     Caption = #29992#25143#21517':'
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = [fsBold]
@@ -21,13 +25,13 @@ inherited FormLogin: TFormLogin
     Transparent = True
   end
   object lbl2: TLabel
-    Left = 120
-    Top = 152
+    Left = 48
+    Top = 96
     Width = 73
     Height = 19
     Caption = #23494'  '#30721':'
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = [fsBold]
@@ -35,13 +39,13 @@ inherited FormLogin: TFormLogin
     Transparent = True
   end
   object lbl3: TLabel
-    Left = 120
-    Top = 184
+    Left = 48
+    Top = 152
     Width = 71
     Height = 19
     Caption = #20844#21496#21035':'
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = [fsBold]
@@ -49,14 +53,14 @@ inherited FormLogin: TFormLogin
     Transparent = True
   end
   object btnEnter: TSpeedButton
-    Left = 120
-    Top = 232
+    Left = 40
+    Top = 200
     Width = 89
     Height = 33
     Caption = #30331'  '#24405
     Flat = True
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = [fsBold]
@@ -64,30 +68,33 @@ inherited FormLogin: TFormLogin
     OnClick = btnEnterClick
   end
   object btnClose: TSpeedButton
-    Left = 280
-    Top = 232
+    Left = 216
+    Top = 200
     Width = 89
     Height = 33
     Caption = #36864'  '#20986
     Flat = True
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = [fsBold]
     ParentFont = False
+    OnClick = btnCloseClick
   end
   object lblMsg: TLabel
-    Left = 120
-    Top = 304
-    Width = 6
-    Height = 12
+    Left = 50
+    Top = 178
+    Width = 95
+    Height = 17
   end
   object edtName: TEdit
-    Left = 200
-    Top = 117
+    Left = 136
+    Top = 37
     Width = 169
     Height = 25
+    BevelInner = bvNone
+    BorderStyle = bsNone
     Ctl3D = False
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -99,10 +106,12 @@ inherited FormLogin: TFormLogin
     TabOrder = 0
   end
   object edtPass: TEdit
-    Left = 200
-    Top = 150
+    Left = 136
+    Top = 94
     Width = 169
     Height = 25
+    BevelInner = bvNone
+    BorderStyle = bsNone
     Ctl3D = False
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -115,17 +124,22 @@ inherited FormLogin: TFormLogin
     TabOrder = 1
   end
   object cbbDB: TComboBox
-    Left = 200
-    Top = 179
+    Left = 136
+    Top = 147
     Width = 169
     Height = 27
+    AutoComplete = False
+    BevelInner = bvNone
+    BevelOuter = bvNone
     Style = csDropDownList
+    Ctl3D = True
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
     Font.Name = #23435#20307
     Font.Style = []
     ItemHeight = 19
+    ParentCtl3D = False
     ParentFont = False
     TabOrder = 2
   end

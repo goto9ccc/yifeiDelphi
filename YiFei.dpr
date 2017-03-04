@@ -21,6 +21,7 @@ begin
   Application.CreateForm(TFormLaunch, FormLaunch);
 
   FormLaunch.Show;
+  FormLaunch.Update;
   //Æô¶¯·þÎñ
   Application.CreateForm(TConService, ConService);
   Application.CreateForm(TUserService, UserService);

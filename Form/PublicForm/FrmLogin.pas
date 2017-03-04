@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, _BaseForm, Buttons, StdCtrls;
+  Dialogs, _BaseForm, Buttons, StdCtrls, jpeg, ExtCtrls;
 
 type
   TFormLogin = class(T_FormBase)
@@ -19,6 +19,7 @@ type
     lblMsg: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure btnEnterClick(Sender: TObject);
+    procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,6 +55,12 @@ begin
     lblMsg.Caption := '用户名或密码错误';
     edtPass.SetFocus;
   end;
+end;
+
+procedure TFormLogin.btnCloseClick(Sender: TObject);
+begin
+  inherited;
+  Close;
 end;
 
 end.

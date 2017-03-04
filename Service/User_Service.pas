@@ -156,6 +156,7 @@ begin
       crComboBox.Items.Add(qry.Fields[0].AsString);
       qry.Next;
   end;
+  Result := True;
 end;
 
 function TUserService.Login(userName, password: string): Boolean;
