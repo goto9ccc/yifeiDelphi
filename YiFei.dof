@@ -94,7 +94,7 @@ OutputDir=bin
 UnitOutputDir=temp
 PackageDLLOutputDir=temp
 PackageDCPOutputDir=temp
-SearchPath=
+SearchPath=E:\MyCode\win\control\eb\Delphi7
 Packages=vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;teeui;teedb;tee;dss;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;Rave50CLX;Rave50VCL;dclOfficeXP;qrpt;EhLib70
 Conditionals=
 DebugSourceDirs=temp
@@ -140,6 +140,9 @@ Item0=temp
 [HistoryLists\hlUnitAliases]
 Count=1
 Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=1
+Item0=E:\MyCode\win\control\eb\Delphi7
 [HistoryLists\hlUnitOutputDirectory]
 Count=1
 Item0=temp

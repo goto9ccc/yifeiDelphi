@@ -1,6 +1,6 @@
 object _FormBase: T_FormBase
-  Left = 247
-  Top = 103
+  Left = 520
+  Top = 259
   Width = 532
   Height = 427
   Caption = '_FormBase'

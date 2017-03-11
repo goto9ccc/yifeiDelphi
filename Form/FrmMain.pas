@@ -12,6 +12,7 @@ type
     mm: TMainMenu;
     N1: TMenuItem;
     N2: TMenuItem;
+    procedure N2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,6 +24,15 @@ var
 
 implementation
 
+uses FrmInv;
+
 {$R *.dfm}
+
+procedure TFormMain.N2Click(Sender: TObject);
+begin
+  FormInv := TFormInv.Create(self);
+  FormInv.ShowModal;
+  FormInv.Free;
+end;
 
 end.

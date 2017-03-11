@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, ComCtrls, ExtCtrls, GridsEh, DBGridEh;
 
 type
   T_FormBase = class(TForm)

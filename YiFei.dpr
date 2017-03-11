@@ -10,7 +10,10 @@ uses
   FrmLaunch in 'Form\PublicForm\FrmLaunch.pas' {FormLaunch},
   FrmLogin in 'Form\PublicForm\FrmLogin.pas' {FormLogin},
   _BaseService in 'Service\_BaseService.pas' {BaseService: TDataModule},
-  User_Service in 'Service\User_Service.pas' {UserService: TDataModule};
+  User_Service in 'Service\User_Service.pas' {UserService: TDataModule},
+  _BaseListForm in 'Form\BaseForm\_BaseListForm.pas' {_FormBaseList},
+  FrmInv in 'Form\Inv\FrmInv.pas' {FormInv},
+  Inv_Service in 'Form\Inv\Inv_Service.pas' {InvService: TDataModule};
 
 {$R *.res}
 
@@ -19,10 +22,10 @@ begin
   Application.Title := '易飞助手';
   Application.CreateForm(TFormMain, FormMain);
   Application.CreateForm(TFormLaunch, FormLaunch);
-
   FormLaunch.Show;
   FormLaunch.Update;
   //启动服务
+  Application.CreateForm(TInvService, InvService);
   Application.CreateForm(TConService, ConService);
   Application.CreateForm(TUserService, UserService);
   FormLaunch.Close;

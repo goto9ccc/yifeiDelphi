@@ -6,10 +6,12 @@ object ConService: TConService
   Height = 302
   Width = 432
   object conMain: TADOConnection
+    LoginPrompt = False
     Left = 48
     Top = 16
   end
   object conCompany: TADOConnection
+    LoginPrompt = False
     Left = 112
     Top = 16
   end
