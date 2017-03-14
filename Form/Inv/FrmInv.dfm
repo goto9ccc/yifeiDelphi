@@ -1,19 +1,13 @@
 inherited FormInv: TFormInv
   Left = 452
   Top = 235
-  Width = 662
   Caption = #24211#23384#26597#35810
   PixelsPerInch = 96
   TextHeight = 12
-  inherited dbgrdh1: TDBGridEh
-    Width = 646
-    DataSource = ds
-  end
-  inherited pnlTop: TPanel
-    Width = 646
+  inherited pnlInfo: TPanel
     object btnSearch: TButton
-      Left = 536
-      Top = 24
+      Left = 520
+      Top = 8
       Width = 97
       Height = 33
       Caption = #26597#35810
@@ -21,8 +15,18 @@ inherited FormInv: TFormInv
       OnClick = btnSearchClick
     end
   end
-  inherited statBottom: TStatusBar
-    Width = 646
+  inherited pnlTop: TPanel
+    inherited lbl1: TLabel
+      Left = 282
+      Width = 84
+      Caption = #24211#23384#26597#35810
+    end
+    inherited btnExit: TSpeedButton
+      Left = 619
+    end
+    inherited btnMin: TSpeedButton
+      Left = 580
+    end
   end
   object ds: TDataSource
     DataSet = InvService.qry

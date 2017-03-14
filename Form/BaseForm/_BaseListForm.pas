@@ -4,13 +4,14 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, _BaseForm, ComCtrls, ExtCtrls, GridsEh, DBGridEh;
+  Dialogs, _BaseForm, ComCtrls, ExtCtrls, GridsEh, DBGridEh, Buttons,
+  StdCtrls;
 
 type
   T_FormBaseList = class(T_FormBase)
+    pnlInfo: TPanel;
+    pnl9: TPanel;
     dbgrdh1: TDBGridEh;
-    pnlTop: TPanel;
-    statBottom: TStatusBar;
   private
     { Private declarations }
   public

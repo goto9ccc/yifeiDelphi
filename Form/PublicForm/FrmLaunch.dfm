@@ -7,6 +7,7 @@ inherited FormLaunch: TFormLaunch
   ClientWidth = 800
   Color = clActiveCaption
   OldCreateOrder = True
+  Position = poDesktopCenter
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 12

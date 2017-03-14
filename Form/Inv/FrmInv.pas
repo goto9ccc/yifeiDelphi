@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, _BaseListForm, ComCtrls, ExtCtrls, GridsEh, DBGridEh, StdCtrls,
-  DB;
+  DB, Buttons;
 
 type
   TFormInv = class(T_FormBaseList)

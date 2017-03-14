@@ -7,16 +7,20 @@ uses
   Dialogs, _BaseForm, Buttons, StdCtrls, jpeg, ExtCtrls;
 
 type
-  TFormLogin = class(T_FormBase)
+  TFormLogin = class(TForm)
     lbl1: TLabel;
     edtName: TEdit;
     lbl2: TLabel;
     edtPass: TEdit;
     lbl3: TLabel;
     cbbDB: TComboBox;
-    btnEnter: TSpeedButton;
-    btnClose: TSpeedButton;
     lblMsg: TLabel;
+    pnlTop: TPanel;
+    lbl4: TLabel;
+    pnl1: TPanel;
+    btnEnter: TSpeedButton;
+    pnl2: TPanel;
+    btnClose: TSpeedButton;
     procedure FormCreate(Sender: TObject);
     procedure btnEnterClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
